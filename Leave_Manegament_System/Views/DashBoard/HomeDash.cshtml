@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+
+        a {
+            color:white;
+        }
+        button {
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="vh-100" >
+       
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                            <div class="card-body p-5 text-center">
+
+                                <h3 class="mb-5"> Employee DashBoard</h3>
+
+                                <a asp-area="" asp-controller="DashBoard" asp-action="EmployeeDetail">
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">My Details </button></a>
+                                <a asp-area="" asp-controller="DashBoard" asp-action="ManagerDetail">
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">My Manager </button></a>
+                                <a asp-area="" asp-controller="DashBoard" asp-action="MyLeaveApplication">
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">My Leave Section </button></a>
+                                <a asp-area="" asp-controller="DashBoard" asp-action="EmployeeDetail">
+                                <button class="btn btn-primary btn-lg btn-block" type="submit"> MY Pending Leave </button></a>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+
+</body>
+</html>
